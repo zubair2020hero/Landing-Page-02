@@ -1,0 +1,176 @@
+sass --watch
+
+-------------------
+
+sass --watch "E:\Zubair\Zubair\FrontEndDev\Work file\02_Project_28_Oct_2024\code\assets\scss\main.scss":"E:\Zubair\Zubair\FrontEndDev\Work file\02_Project_28_Oct_2024\code\assets\css\style.css"
+
+    sass --watch "E:\Zubair\Zubair\FrontEndDev\Work file\Project\02_Project\code\assets\scss\main.scss":"E:\Zubair\Zubair\FrontEndDev\Work file\Project\02_Project\code\assets\css\style.css"
+
+
+-----
+SCSS এর ভিতর  Maps, ভেরিয়েবল এবং Nesting কিভাবে কাজ করে
+
+Finsweek
+
+declaration
+
+white: #ffffff,
+royalBlue: #2405F2,
+darkBlue: #282938,
+grey: #F4F6FC,
+yellow: #FCD980,
+tintBlue: #1C1E53,
+accent: #EEF4FA,
+
+
+semiBold
+medium
+regular
+
+-------------
+// .faq-content {
+//     & .za-accordion-item {
+//         border-bottom: 3px solid #ECECF1;
+
+//         & .za-accordion-header {
+//             margin: 0;
+//             transition: all 0.3s ease;
+//         }
+
+//         & .za-accordion-button {
+//             color: var(--za-cr-darkBlue);
+//             font-size: var(--za-fs-h6);
+//             line-height: 36px;
+//             font-weight: var(--za-fw-medium);
+//             padding: 26px 0;
+//             width: 100%;
+//             display: flex;
+//             justify-content: space-between;
+//             align-items: center;
+//             position: relative;
+
+//             & .number {
+//                 margin-right: 50px;
+//                 color: var(--za-cr-royalBlue);
+//             }
+//             & .icon {
+//                 transform: rotate(-90deg);
+//                 & i{
+//                     font-size: 16px;
+//                 }
+//             }
+//         }
+//         & .za-accordion-body{
+//             padding: 0 40px 21px 80px;
+//         }
+//     }
+// }
+
+---------------------
+       <!-- <div class="col-lg-8">
+                    <div class="faq-content">
+                        <div class="accordion" id="accordionExample">
+                            <div class="za-accordion-item">
+                                <div class="za-accordion-header">
+                                    <div class="za-accordion-button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="question">
+                                            <span class="number">01</span> How much time does it take?
+                                        </div>
+
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="za-accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="za-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="za-accordion-item">
+                                <div class="za-accordion-header">
+                                    <div class="za-accordion-button" data-bs-toggle="collapse" role="group"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="question">
+                                            <span class="number">02</span> What is your class naming convention?
+                                        </div>
+
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="za-accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="za-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="za-accordion-item">
+                                <div class="za-accordion-header">
+                                    <div class="za-accordion-button" data-bs-toggle="collapse" role="group"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="question">
+                                            <span class="number">03</span> How do you communicate?
+                                        </div>
+
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="za-accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="za-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="za-accordion-item">
+                                <div class="za-accordion-header">
+                                    <div class="za-accordion-button" data-bs-toggle="collapse" role="group"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="question">
+                                            <span class="number">04</span> I have a bigger project. Can you handle it?
+                                        </div>
+
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="za-accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="za-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="za-accordion-item">
+                                <div class="za-accordion-header">
+                                    <div class="za-accordion-button" data-bs-toggle="collapse" role="group"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="question">
+                                            <span class="number">05</span> What is your class naming convention?
+                                        </div>
+
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="za-accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="za-accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+-------------

@@ -1,0 +1,75 @@
+@use '../utils'as *;
+
+/*****Testimonial Area Style*****/
+
+.testimonial-area {
+    background: #f9fafd;
+
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+
+.testimonial-active {
+    margin: 0;
+
+    @media #{$sm,$md,$od} {
+        margin-top: 26px;
+    }
+}
+
+.testimonial-box {
+    &>h5 {
+        font-size: var(--za-fs-h5);
+        font-weight: var(--za-fw-medium);
+    }
+
+    & .testimonial-client {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        & .testimonial-meta {
+            & h5 {
+                font-size: 18px;
+                font-weight: var(--za-fw-medium);
+                margin-bottom: 1px;
+            }
+
+            & span {
+                font-size: 12px;
+                font-weight: var(--za-fw-medium);
+            }
+        }
+    }
+}
+
+.slick-slider {
+    position: relative;
+
+    & button {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: var(--za-cr-white);
+        color: var(--za-cr-darkBlue);
+        bottom: 8px;
+        right: 0;
+        border-radius: 50px;
+        z-index: 9;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: var(--za-cr-royalBlue);
+            color: var(--za-cr-white);
+        }
+    }
+
+    & .slick-prev {
+        right: 60px;
+
+        @media #{$sm,$md,$od} {
+            right: 60px;
+        }
+    }
+}

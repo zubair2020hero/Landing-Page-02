@@ -1,0 +1,27 @@
+@use '../utils'as *;
+
+/*****Blog Area Style*****/
+
+.blog-area {
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+
+.blog-item{
+    & .blog-time{
+        margin-top: 33px;
+        color: #686974;
+    }
+
+    & .blog-item-title{
+        font-size: var(--za-fs-h6);
+        font-weight: var(--za-fw-medium);
+        line-height: 36px;
+    }
+
+    & .blog-item-p{
+        line-height: 28px;
+        color: #787982;
+    }
+}

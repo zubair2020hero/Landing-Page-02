@@ -1,0 +1,40 @@
+// font url 
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap';
+
+// font family 
+
+$font-family: (
+    ff: (
+        body: "'Poppins', sans-serif",
+        heading: "'Poppins', sans-serif",
+        p: "'Poppins', sans-serif",
+        fontawesome: "'Font Awesome 6 Free', sans-serif"
+    )   
+);
+
+// font weight
+
+$font-weight:(
+    fw:(
+        regular: 400,
+        medium:500,
+        semiBold:700,
+    )
+);
+
+// font size
+
+$font-size:(
+    fs:(
+        body: 1.00rem, // 16px
+        p: 1.00rem, // 16px
+        h1: 3.38rem, // 54px
+        h2: 3.00rem, // 48px
+        h3: 2.38rem, // 38px
+        h4: 2.25rem, // 36px
+        h5: 2.00rem, // 32px
+        h6: 1.50rem, // 24px
+    )
+);
+

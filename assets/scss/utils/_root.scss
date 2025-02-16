@@ -1,0 +1,34 @@
+@use 'typography' as*;
+
+@use 'color' as*;
+
+/*****Variables*****/
+:root{
+    /* $font-family declaration */
+    @each $ff, $keys in $font-family{
+        @each $key, $value in $keys{
+            --za-#{$ff}-#{$key}: #{$value};
+        }
+    }
+
+    /* $font-weight declaration */
+     @each $fw, $keys in $font-weight{
+        @each $key, $value in $keys{
+            --za-#{$fw}-#{$key}: #{$value};
+        }
+    }
+
+    /* $font-size declaration */
+    @each $fs, $keys in $font-size{
+        @each $key, $value in $keys{
+            --za-#{$fs}-#{$key}: #{$value};
+        }
+    }
+
+    /* $colors declaration */
+    @each $cr, $keys in $colors{
+        @each $key, $value in $keys{
+            --za-#{$cr}-#{$key}: #{$value};
+        }
+    }
+}

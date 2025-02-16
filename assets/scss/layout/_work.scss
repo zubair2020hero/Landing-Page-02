@@ -1,0 +1,76 @@
+@use '../utils'as *;
+
+/*****Work Area Style*****/
+
+.work-area{
+    background: var(--za-cr-grey);
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+.work-item{
+    & span{
+        margin-bottom: 18px;
+    }
+    & h5{
+        font-size: var(--za-fs-h5);
+        font-weight: var(--za-fw-medium);
+        color: var(--za-cr-darkBlue);
+    }
+    & p{
+        font-size: var(--za-fs-p);
+        font-weight: var(--za-fw-regular);
+        color: #686975;
+        margin-top: 17px;
+    }
+}
+.work-box{
+    @media #{$sm,$md,$od} {
+ margin-top: 20px;
+    }
+}
+.iconOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2405F2;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+}
+
+.iconOne::after {
+    position: absolute;
+    content: "";
+    background-color: #FCD980;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 0 0 8px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.iconOne::before {
+    position: absolute;
+    content: "";
+    background-color: #5239FA;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 8px 0 8px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.iconOne i {
+    z-index: 9999;
+    font-size: 18px;
+    font-weight: var(--za-fw-medium);
+    font-family: var(--za-ff-p);
+    font-style: normal;
+}
+

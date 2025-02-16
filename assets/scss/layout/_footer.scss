@@ -1,0 +1,111 @@
+@use '../utils'as *;
+
+/*****Footer Area Style*****/
+
+.footer-top {
+    background-color: var(--za-cr-tintBlue);
+
+    @media #{$sm,$md,$od} {
+        padding: 80px 0 0 0;
+    }
+
+
+    & .footer-left-top {
+        & .logo {
+            & a {
+                & img {
+                    width: 160px;
+                }
+            }
+        }
+
+        & p {
+            margin-top: 25px;
+            font-weight: var(--za-fw-regular);
+            line-height: 28px;
+            color: #d1d2dc;
+        }
+    }
+
+    & .footer-left-bottom {
+        background-color: var(--za-cr-yellow);
+        display: flex;
+        gap: 30px;
+        color: var(--za-cr-darkBlue);
+        padding: 30px 0 25px 30px;
+
+        @media #{$sm,$md,$od} {
+            margin-top: 25px;
+        }
+
+        & .footer-contact {
+            & span {
+                font-weight: var(--za-fw-medium);
+                margin-bottom: 5px;
+            }
+
+            & p {
+                font-weight: var(--za-fw-regular);
+                padding-top: 5px;
+            }
+        }
+    }
+
+    & .footer-right {
+        & h1 {
+            font-size: var(--za-fs-h2);
+            font-weight: var(--za-fw-semiBold);
+        }
+
+        & p {
+            margin-top: 25px;
+            font-weight: var(--za-fw-regular);
+            line-height: 28px;
+            color: #d1d2dc;
+        }
+
+        & .social-media {
+           display: flex;
+            gap: 26px;
+            padding: 0;
+          
+            & li {
+                & a {
+                    color: var(--za-cr-white);
+                    transition: all 0.5s ease-in-out;
+                }
+
+                &:hover>a {
+                    color: var(--za-cr-yellow);
+                }
+            }
+
+        }
+    }
+}
+
+.footer-bottom {
+    color: var(--za-cr-darkBlue);
+
+    & p {
+        font-weight: var(--za-fw-medium);
+    }
+
+    & ul {
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+
+        & li {
+            font-weight: var(--za-fw-medium);
+
+            & a {
+                transition: all 0.5s ease-in-out;
+            }
+
+            &:hover>a {
+                color: var(--za-cr-yellow);
+            }
+        }
+    }
+}

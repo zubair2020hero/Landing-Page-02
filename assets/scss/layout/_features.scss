@@ -1,0 +1,31 @@
+@use '../utils'as *;
+
+/*****Features Area Style*****/
+
+.features-area {
+    background: var(--za-cr-grey);
+
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+
+.features-card {
+    background: var(--za-cr-white);
+    padding: 45px 46px 28px 44px;
+
+    & h6 {
+        font-size: var(--za-fs-h6);
+        font-weight: var(--za-fw-medium);
+        line-height: 36px;
+        margin: 14px 0;
+        color: var(--za-cr-darkBlue);
+    }
+
+    & p {
+        font-size: var(--za-fs-p);
+        font-weight: var(--za-fw-regular);
+        line-height: 28px;
+        color: var(--za-cr-darkBlue);
+    }
+}

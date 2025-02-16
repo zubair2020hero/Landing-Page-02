@@ -1,0 +1,106 @@
+@use '../utils'as *;
+
+/*****projects Area Style*****/
+
+.projects-area {
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+
+.projucts-btn {
+    @media #{$sm,$md,$od} {
+        margin: -26px 0 15px 0
+    }
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    @media #{$sm,$md,$od} {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    & .projects-card {
+        &:nth-child(1) {
+            grid-column: span 8;
+            grid-row: span 4;
+            @media #{$sm,$md,$od} {
+                grid-column: span 4;
+                grid-row: span 2;
+            }
+        }
+
+        &:nth-child(2) {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+
+        &:nth-child(3) {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+    }
+
+    & .projects-content {
+
+        & h5 {
+            font-size: 24px;
+            font-weight: var(--za-fw-semiBold);
+            line-height: 36px;
+        }
+
+        & p {
+            font-weight: var(--za-fw-regular);
+            line-height: 28px;
+            margin: 16px 0 38px 0;
+            @media #{$sm,$md,$od} {
+             display: none;
+            }
+        }
+
+    }
+}
+
+.card-box {
+    position: relative;
+    overflow: hidden;
+
+    & .card-content {
+        position: absolute;
+        display: block;
+        // background: #1C1E53;
+        background: #1c1e53bd;
+        color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        width: 0;
+        height: 100%;
+        padding: 40px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+        & .card-style {
+            position: absolute;
+            bottom: 10%;
+        }
+    }
+
+    &:hover {
+        & .card-content {
+            opacity: 1;
+            visibility: visible;
+            width: 400px;
+            @media #{$sm,$md,$od} {
+                width: 100%;
+            }
+        }
+    }
+}

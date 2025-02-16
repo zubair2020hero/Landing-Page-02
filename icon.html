@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        /* icon Area Style */
+        .bg_fo {
+            background: #ccc;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .iconOne {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: blue;
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .iconOne::after {
+            position: absolute;
+            content: "";
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+            border-radius: 0 0 0 5px;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .iconOne::before {
+            position: absolute;
+            content: "";
+            background-color: blueviolet;
+            width: 50px;
+            height: 50px;
+            border-radius: 0 5px 0 5px;
+            top: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .iconOne i {
+            z-index: 9999;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- icon Area Start -->
+    <div class="bg_fo">
+        <span class="iconOne"><i>01</i></span>
+    </div>
+    <!-- icon Area End -->
+</body>
+
+</html>

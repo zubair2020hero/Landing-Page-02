@@ -1,0 +1,56 @@
+@use '../utils'as *;
+
+/*****Hero Area Style*****/
+
+.hero-area {
+    background-color: var(--za-cr-tintBlue);
+
+    @media #{$sm,$md,$od} {
+        padding: 80px 0;
+    }
+}
+
+.hero-text {
+
+    @media #{$sm,$md,$od} {
+        text-align: center;
+    }
+
+    & h1 {
+        font-size: var(--za-fs-h1);
+        font-weight: var(--za-fw-semiBold);
+        line-height: 74px;
+        margin-bottom: 14px;
+        color: var(--za-cr-white);
+
+        @media #{$sm, $md, $od} {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+
+    & p {
+        font-size: var(--za-fs-p);
+        font-weight: var(--za-fw-regular);
+        line-height: 28px;
+        color: #abacbf;
+        margin-bottom: 37px;
+    }
+
+    & .hero-btn {
+        display: flex;
+
+        @media #{$sm, $md, $od } {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.hero-img {
+    & img {
+        @media #{$sm,$md,$od} {
+            margin-top: 20px;
+        }
+    }
+}

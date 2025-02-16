@@ -1,0 +1,53 @@
+@use '../utils'as *;
+
+
+/*****Reuse Class*****/
+
+.za-section-title {
+    font-size: 48px;
+    font-weight: var(--za-fw-semiBold);
+    color: var(--za-cr-darkBlue);
+    margin-bottom: 20px;
+
+    @media #{$sm, $md, $od, $lg} {
+        font-size: 35px;
+    }
+}
+.blog-title{
+    & .za-section-title {
+        margin-bottom: 56px;
+    }
+}
+
+.testimonial-title {
+    & .za-section-title {
+        font-size: var(--za-fs-h5);
+    }
+}
+
+.faq-title {
+    & .za-section-title {
+        font-size: var(--za-fs-h5);
+    }
+}
+
+.za-section-p {
+    color: var(--za-cr-darkBlue);
+}
+
+.za-section-top {
+    font-weight: var(--za-fw-medium);
+}
+
+.contact-title {
+    & .za-section-title {
+        font-size: var(--za-fs-h5);
+        font-weight: var(--za-fw-medium);
+        color: var(--za-cr-white);
+    }
+
+    & .za-section-p {
+        line-height: 28px;
+        color: var(--za-cr-white);
+    }
+}
